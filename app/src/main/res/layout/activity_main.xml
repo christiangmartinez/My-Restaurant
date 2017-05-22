@@ -17,19 +17,6 @@
         android:id="@+id/imageView"
         android:src="@drawable/bg"
         android:scaleType="centerCrop"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My Restaurants"
-        android:layout_marginLeft="116dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="34dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textColor="@color/colorTextIcons"
-        android:id="@+id/appNameTextView"
-        />
 
     <Button
         android:text="Find Restaurants"
@@ -54,4 +41,15 @@
         android:background="@color/colorTextIcons"
         android:hint="Enter Zip Code"
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Restaurants"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/colorTextIcons"
+        android:id="@+id/appNameTextView"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
