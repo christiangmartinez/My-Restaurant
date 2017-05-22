@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 String location = mLocationEditText.getText().toString();
                 if (location.equals("")) {
                     Toast toast = Toast.makeText(MainActivity.this, "Please input a location", Toast.LENGTH_LONG);
-                    toast.setGravity(Gravity.TOP|Gravity.LEFT, 400, 1000);
+                    toast.setGravity(Gravity.CENTER, 0, 500);
                     toast.show();
                 } else {
                     Intent intent = new Intent(MainActivity.this, activityRestaurants.class);
