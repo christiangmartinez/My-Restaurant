@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     Intent intent = new Intent(MainActivity.this, activityRestaurants.class);
                     intent.putExtra("location", location);
+                    mLocationEditText.setText("");
                     startActivity(intent);
                 }
                 }
