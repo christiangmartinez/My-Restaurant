@@ -11,8 +11,13 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.IOException;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.Response;
 
 public class RestaurantActivity extends AppCompatActivity {
     private String[] donuts = new String[] {"Pip's Original", "Coco Donuts", "Sesame Donuts", "Tonalli's"};
@@ -40,7 +45,29 @@ public class RestaurantActivity extends AppCompatActivity {
         });
 
         Intent intent = getIntent();
-        String zip = intent.getStringExtra("zip");
-        mLocationTextView.setText("Yo, dawg. Here are all the donuts near "  + zip);
+        String location = intent.getStringExtra("location");
+        mLocationTextView.setText("Yo, dawg. Here are all the donuts near "  + location);
+
+        getRestaurants(location);
+    }
+
+    private void getRestaurants(String location) {
+        final YelpService yelpService = new YelpService();
+        yelpService.findRestaurants(location, new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                e.printStackTrace();
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                try {
+                    String jsonData = response.body().string();
+                    Log.v(TAG, jsonData);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 }

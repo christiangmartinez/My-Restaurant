@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        mEmberButton.setOnClickListener(new View.OnClickListener(this);
+        mEmberButton.setOnClickListener(this);
         Typeface pacificoFont = Typeface.createFromAsset(getAssets(), "fonts/Pacifico.ttf");
         mMyRestaurantsTextView.setTypeface(pacificoFont);
     }
@@ -31,9 +31,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if (v == mEmberButton) {
-            String zip = mZipEditText.getText().toString();
+            String location = mZipEditText.getText().toString();
             Intent intent = new Intent(MainActivity.this, RestaurantActivity.class);
-            intent.putExtra("zip", zip);
+            intent.putExtra("location", location);
             startActivity(intent);
         }
     }
