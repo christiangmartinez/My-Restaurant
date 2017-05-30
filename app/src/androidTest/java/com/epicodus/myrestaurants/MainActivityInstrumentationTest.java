@@ -1,6 +1,9 @@
 package com.epicodus.myrestaurants;
 
 import android.support.test.rule.ActivityTestRule;
+
+import com.epicodus.myrestaurants.ui.MainActivity;
+
 import org.junit.Rule;
 import org.junit.Test;
 
