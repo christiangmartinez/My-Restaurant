@@ -51,4 +51,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     testCompile 'org.robolectric:robolectric:3.0'
     testCompile 'org.robolectric:shadows-support-v4:3.0'
+    compile 'org.parceler:parceler-api:1.1.6'
+    annotationProcessor 'org.parceler:parceler:1.1.6'
+    compile 'com.squareup.picasso:picasso:2.5.2'
 }
