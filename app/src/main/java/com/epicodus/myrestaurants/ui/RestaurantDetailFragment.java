@@ -89,7 +89,7 @@ public class RestaurantDetailFragment extends Fragment implements View.OnClickLi
             Intent mapIntent = new Intent(Intent.ACTION_VIEW,
                     Uri.parse("geo:" + mRestaurant.getLatitude()
                             + "," + mRestaurant.getLongitude()
-                            + "?q=(" + mRestaurant.getName() + ")"));
+                             + "?q=(" + mRestaurant.getName() + ")"));
             startActivity(mapIntent);
         }
     }
