@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "174517184783",
+    "firebase_url": "https://lotsa-donuts.firebaseio.com",
+    "project_id": "lotsa-donuts",
+    "storage_bucket": "lotsa-donuts.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174517184783:android:dff6c1b29d00d12f",
+        "android_client_info": {
+          "package_name": "com.epicodus.myrestaurants"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174517184783-uf7j3985vsn1dp66m9tv0b9ii2jambro.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.epicodus.myrestaurants",
+            "certificate_hash": "09057e10991a8940e9b2d7bd6b030fb3c1435896"
+          }
+        },
+        {
+          "client_id": "174517184783-6lgdg196vbbavqucrcktbbq9sbouvuu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMWyTz-zt-tBV6lo4k_GolgyCINwsHtvQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "174517184783-6lgdg196vbbavqucrcktbbq9sbouvuu1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
